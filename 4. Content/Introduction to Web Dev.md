@@ -16,7 +16,7 @@ First, let's create an empty HTML page. It will contain the head and the body.
 </html>
 ```
 ## 2. Setting the title of the page
-Inside the <head> tags, type in "<title>Page title</title>". 
+Inside the head tags, we will typein the page title. 
 
 If you run index.html in a browser, you will see that it's title is now "Page Title".
 ```
@@ -26,7 +26,7 @@ If you run index.html in a browser, you will see that it's title is now "Page Ti
 ```
 ## 3. Adding a comment
 
-Inside the body, type in "<!-- This is a comment -->". This will not be displayed on the web page.
+Inside the body,we will type in a comment. This will not be displayed on the web page.
 
 Comments may be useful for developers reading the code.
 ```
@@ -37,7 +37,7 @@ Comments may be useful for developers reading the code.
 </body>
 ```
 ## 4. Adding a Heading.
-Below the comment, we will add the heading "<h1>My First Heading</h1>".
+Below the comment, we will add the heading "My First Heading".
 
 h1 is the most important heading. We can also use other headings like h2, h3, h4, h5, and h6, with h6 having the least importance.
 ```
@@ -53,10 +53,10 @@ Below the heading, write the following paragraphs:
     <p>This is <br> a para<br>graph with line breaks</p>
 ```
 
-The first paragraph is displayed as one paragraph. The sencond paragraph contains line breaks because "<br>" tells the browser to start on a new line.
+The first paragraph is displayed as one paragraph. The sencond paragraph contains line breaks because "br" tells the browser to start on a new line.
 
 ## 6. Whitespace is ignored.
-Add the following below the paragraphs.
+Add the following below the paragraphs:
 ```
     This
     Is
@@ -70,7 +70,7 @@ The text are all displayed on one line since HTML ignores whitespace.
 
 ## 7. Making a Hyperlink.
 
-Add "<a href="http://www.microsoft.com">This is a link to Microsoft</a>" below the set of text.
+Add a link to microsoft.com below the set of text.
 
 ```
 "<a href="http://www.microsoft.com">This is a link to Microsoft</a>"
@@ -80,11 +80,11 @@ The href attribute tells the browser where to go. In this instance, the link tak
 
 ## 8. Ordered lists
 
-In order to use an ordered list, we need to type in the <ol> tags.
+In order to use an ordered list, we need to type in the ol tags.
 
-Inside those tags, we need to add a <li> for each element of that list.
+Inside those tags, we need to add a li for each element of that list.
 
-The text inside the <li> tags is displayed as the text for each list element.
+The text inside the li tags is displayed as the text for each list element.
 
 Since this is an ordered list, the list elements are automatically formatted with numbers.
 
@@ -103,7 +103,7 @@ Unordered lists are look like ordered lists and are coded like ordered lists as 
 
 The difference is that instead of formatting the list with numbers to show order, the list is formatted using bullet points by default.
 
-In terms of coding, we use <ul> instead of <ol>. The rest of the code remains the same.
+In terms of coding, we use ul instead of ol. The rest of the code remains the same.
 
 Below the ordered list, add the following:
 ```
@@ -131,7 +131,7 @@ To do this, right click on an empty space, click New > Text Document. Then name 
 
 ## 12. Add an external stylesheet.
 
-Inside the <head> tags of index.html, add the following line.
+Inside the head tags of index.html, add the following line.
 ```
 <link rel="stylesheet" href="styles.css">
 ```
