@@ -20,7 +20,7 @@ The installation steps may differ depending on your operating system:
 
 | Windows | Mac OS X | Linux |
 | --- | --- | --- |
-| 1. Get for [Windows](https://go.microsoft.com/fwlink/?LinkID=534107) | 1. Get for [Mac OS X](https://go.microsoft.com/fwlink/?LinkID=534106) | 1. Get for [Debian](http://go.microsoft.com/fwlink/?LinkID=760868) or [Red Hat](http://go.microsoft.com/fwlink/?LinkID=760867) based distros |
+| 1. Download for [Windows](https://go.microsoft.com/fwlink/?LinkID=534107) | 1. Download for [Mac OS X](https://go.microsoft.com/fwlink/?LinkID=534106) | 1. Download for [Debian](http://go.microsoft.com/fwlink/?LinkID=760868) or [Red Hat](http://go.microsoft.com/fwlink/?LinkID=760867) based distros |
 | 2. Double click on `VSCodeSetup.exe`  | 2. Double click on the archive | 2. Double click on the package file |
 | 3. Install the executable | 3. Drag `Visual Studio Code.app` to the Applications folder | 3. Install via the GUI package manager |
 | By default you can run VS Code in `C:\Program Files (x86)\Microsoft VS Code` | Available in the `Launchpad` | Available in the launcher |
@@ -33,4 +33,4 @@ To quickly download a project from Github, simply:
   2. Click on **Download ZIP** on the mid-right section
     - or get the [direct zip link](https://github.com/ovishesh/MSA-GIT-WebDev-Workshop/archive/master.zip)
   3. Save and extract the archive in a suitable location
-  - [x] Completed: Installing Visual Studio Code
+  - [x] Completed: Downloading Source Code from Github
