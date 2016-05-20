@@ -7,7 +7,7 @@ The final solution can be viewed here - [https://captionbotsam.azurewebsites.net
 ---
 
 
-###1. [Setting Up](./content/Setting Up.md)
+###1. [Setting Up](./4. Content/Setting Up.md)
 
 This section will help you:
 * Create a Microsoft Account
@@ -20,7 +20,7 @@ This section will help you:
 This section will introduce to basic web development.
 
 
-###3. [Setting up the Front-end](./content/Front-end.md)
+###3. [Setting up the Front-end](./4. Content/Front-end.md)
 
 This section will help you use an existing Bootstrap template that you can use for UI.
 
@@ -30,7 +30,7 @@ This section will help you use an existing Bootstrap template that you can use f
 Knock down barriers between you and your ideas. Enable natural and contextual interaction with tools that augment users' experiences via the power of machine-based AI. Plug them in and bring your ideas to life.
 
 
-###5. [Write the logic to implement Cognitive Services in your solution](./content/Back-end.md)
+###5. [Write the logic to implement Cognitive Services in your solution](./4. Content/Back-end.md)
 
 This section will help you write basic javascript logic to post a picture to Microsoft Cognitive Services, and then recieving the response.
 
