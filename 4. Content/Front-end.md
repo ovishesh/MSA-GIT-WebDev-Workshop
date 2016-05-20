@@ -22,8 +22,8 @@ You should see something like this:
 
 ![1-1](/4. Content/images/Front-end/HTML Overview.PNG)
 
-You should see at the top your opening <html> tag. Within that tag you have two children elements, a <head> and a <body> tag.
+You should see at the top your opening ```<html>``` tag. Within that tag you have two children elements, a ```<head>``` and a ```<body>``` tag.
 
-Your <head> element is where you'll define your page title, reference your css style sheet and javascript files, and any other meta data pertaining to your page.
+Your ```<head>``` element is where you'll define your page title, reference your css style sheet and javascript files, and any other meta data pertaining to your page.
 
-Inside your <body> tags is where you'll set out the structure of your page including titles, text paragraphs, tables, forms, images, etc.
+Inside your ```<body>``` tags is where you'll set out the structure of your page including titles, text paragraphs, tables, forms, images, etc.
