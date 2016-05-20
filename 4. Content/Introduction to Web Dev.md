@@ -16,7 +16,7 @@ First, let's create an empty HTML page. It will contain the head and the body.
 </html>
 ```
 ## 2. Setting the title of the page
-Inside the head tags, we will typein the page title. 
+Inside the head tags, we will type in the page title. 
 
 If you run index.html in a browser, you will see that it's title is now "Page Title".
 ```
@@ -76,7 +76,7 @@ Add a link to microsoft.com below the set of text.
 "<a href="http://www.microsoft.com">This is a link to Microsoft</a>"
 ```
 
-The href attribute tells the browser where to go. In this instance, the link takes you to microsoft.com. The text in between the <a> tags are the displayed text in the browser.
+The href attribute tells the browser where to go. In this instance, the link takes you to microsoft.com. The text in between the a tags are the displayed text in the browser.
 
 ## 8. Ordered lists
 
