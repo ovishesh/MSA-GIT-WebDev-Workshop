@@ -116,7 +116,7 @@ Now that you've got those two set up you should have something like this:
 
 What this function is doing is it's using ajax to construct our call, setting the URL, defining the content type and setting passing the apiKey in the header of our request, setting the REST type to POST and passing it the user's image.
 Ajax is asynchronous meaning it makes the request in the background. But how do we know when the request is finish? When the call is made the rest of the function continues and stops when it gets to the end. What we need is a Promise. Think of a Promise like a call back. There are a few different Promise functions but what we want to know is when it call finishes and whether it was successful or not.
-That's what ```.done(function...``` and .fail(function...``` are. When the call is done and was successful the ```.done()``` Promise is called and what that's doing is it's taking the result from our call and passing it to a function called 'Pronext step).
+That's what ```.done(function...``` and ```.fail(function...``` are. When the call is done and was successful the ```.done()``` Promise is called and what that's doing is it's taking the result from our call and passing it to a function called 'Pronext step).
 ```.fail()``` is called when the call was unsuccessful and what that Promis is doing is taking the result and adding it to the element in our index.html with an ID of 'response'.
 
 7. So now that we have our result from our API call, we now want to create the 'ProcessResult' function.
