@@ -1,4 +1,5 @@
 # Intro to Web Development
+# Part 1
 ## 1. HTML Structure.
 
 First, let's create an empty HTML page. It will contain the head and the body.
@@ -139,3 +140,41 @@ The rel attribute specifies the relationship between the HTML page and the CSS p
 The href contains the location of the CSS file. In this case, it is stored locally, in the same folder as index.html, and is named "styles.css".
 
 There will be no noticeable change seen in the HTML file, since we have not yet added any styles to "styles.css".
+
+#Part 2
+
+## 13. Add styles to the CSS file.
+
+Open styles.css in your text editor. Then add the following line:
+```
+h1 {
+	color: yellow;
+	font-size: 60px;
+}
+```
+Refresh your site. The h1 heading at the very top should now have a font color of yellow and a font size of 60px.
+
+## 14. Create an external JavaScript
+
+In the same folder as your index.html file, create a new file called "test.js". 
+
+To do this, right click on an empty space, click New > Text Document. Then name it "test.js".
+
+## 15. Add an external JavaScript File.
+
+Inside the head tags, write:
+```
+<script type="text/javascript" src="test.js"></script>
+```
+The src contains the location of the JavaScript file. In this case, it is stored locally, in the same folder as index.html, and is named "test.js".
+
+There will be no noticeable behaviour seen since the JavaScript file is empty.
+
+## 16. Add a behaviour to the JavaScript File
+
+Inside the JavaScript file, write:
+```
+alert(“Hello World”)
+
+```
+If you refresh the page, the alert Hello World gets displayed automatically
