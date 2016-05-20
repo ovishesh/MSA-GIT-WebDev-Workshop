@@ -6,13 +6,11 @@ Breif overview of HTML, JS, and CSS.
 
 For this session we'll be downloading a template from http://startbootstrap.com/template-categories/all/ rather than creating a brand new site from scratch.
 
-The template we'll be using can be found here: http://startbootstrap.com/template-overviews/business-frontpage/
+The template we'll be using can be found, if you've already cloned the repository, in '1. HTML Template'. If you havent cloned the repository do so now.
 
-1. Navigate to http://startbootstrap.com/template-overviews/business-frontpage/ and click 'Download'.
+1. Navigate to '1. HTML Template'.
 
-2. Once that's finished downloading go ahead and unzip it the contents. You should have a css, js and font folder along with a index.html file.
-
-3. Open index.html in your browser and have a quick look around.
+2. Open index.html in your browser and have a quick look around the website.
 
 ## HTML
 
@@ -48,4 +46,11 @@ You may notice some sections have a '.' (like business-header) in front of them 
 ```<div>``` a class and inside your css file to refer to that class you'd go '.myClass' with a full stop in front. You can also add an ID to your ```<div>``` element as well. To reference that ID you'd go '#myID' with a hashtag in front. If you want to change all ```<div>``` elements on your webpage you'd
 simply go 'div' with no full stops or hashtags in front. 
 
+The reason why we're putting all our styles into a seperate css file rather than defining our style inline is down to the D.R.Y. principle which stands for Don't Repeat Yourself.
+
 Note: You can only use a particular ID once while class can be used as many times as you like.
+
+## Javascript
+
+Going back to index.html you'll noticed down at the bottom on lines 143 and 146 references to two javascript files. A 'jquery.js' and a 'bootstrap.min.js'. Jquery is used on the page to get reference to spacific elements so you can maniplate through logic based code. 'bootstrap.min.js' is used for making our website responsive meaning
+no matter what device a user views our website on, our page will scale down nicely.
