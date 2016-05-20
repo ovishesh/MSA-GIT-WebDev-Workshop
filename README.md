@@ -15,7 +15,7 @@ This section will help you:
 * Set up your environment by downloading the source code
 
 
-###2. [Introduction to Web Development](./content/Introduction to Web Dev.md)
+###2. [Introduction to Web Development](./4. Content/Introduction to Web Dev.md)
 
 This section will introduce to basic web development.
 
@@ -25,7 +25,7 @@ This section will introduce to basic web development.
 This section will help you use an existing Bootstrap template that you can use for UI.
 
 
-###4. [Introduction to Cognitive Services](./content/Cognitive Services.md)
+###4. [Introduction to Cognitive Services](./4. Content/Cognitive Services.md)
 
 Knock down barriers between you and your ideas. Enable natural and contextual interaction with tools that augment users' experiences via the power of machine-based AI. Plug them in and bring your ideas to life.
 
@@ -35,7 +35,7 @@ Knock down barriers between you and your ideas. Enable natural and contextual in
 This section will help you write basic javascript logic to post a picture to Microsoft Cognitive Services, and then recieving the response.
 
 
-###6. [Activate Microsoft Azure via DreamSpark](http://msa.ms/activate)
+###6. [Activate Microsoft Azure via DreamSpark](./4. Content/Azure.md)
 
 More TBC.
 
