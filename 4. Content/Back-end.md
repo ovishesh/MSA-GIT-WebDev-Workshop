@@ -18,15 +18,15 @@ You should have something that looks like this:
 
 Now that we have created our vision.js and have added reference to it in our index.html, now what we want to do is add our logic, code that will take whatever image a user decides to use, pass it to Cognitive Services, and display the results to the user.
 
-1. First thing you want to do is create a new variable that will hold our API key we retrived when subscribing to the vision API in Cognitive Services. So add the following line to the top of vision.js
+First thing you want to do is create a new variable that will hold our API key we retrived when subscribing to the vision API in Cognitive Services. So add the following line to the top of vision.js
 
 ```var apiKey = "YOUR API KEY";```
 
-2. Next we want to create another variable that will hold the URL we'll be using to make a REST request to.
+Next we want to create another variable that will hold the URL we'll be using to make a REST request to.
 
 ```var apiUrl = "https://api.projectoxford.ai/vision/v1.0/analyze?visualFeatures=Description,Tags";```
 
-3. Going back to index.html, what we now want to do is add a image selection button so the user can pick an image from their computer and a upload button to send that image off to Cognitive Services. On line 80, remove the clidren elements inside ```<div class="row">``` and add the following code.
+Going back to index.html, what we now want to do is add a image selection button so the user can pick an image from their computer and a upload button to send that image off to Cognitive Services. On line 80, remove the clidren elements inside ```<div class="row">``` and add the following code.
 
 ```
 	<div class="col-sm-8">
@@ -52,7 +52,7 @@ You should have something like this:
 
 What ```<input>``` is allowing the user to input ```type="file"``` and the ```onchange="readURL(this);"``` tag is doing is passing the file the user selected to a function called 'readURL' defined in our vision.js (next step). The remaining elements are there so we can add information to them later after making our call.
 
-4. Now that we have our index.html setup to take the user's image and display the results from our call, what we want to do now is setup vision.js to take those inputs and make our request. So, go into vision.js and right underneath  ```apiUrl``` we're going to add the function 'readURL'.
+Now that we have our index.html setup to take the user's image and display the results from our call, what we want to do now is setup vision.js to take those inputs and make our request. So, go into vision.js and right underneath  ```apiUrl``` we're going to add the function 'readURL'.
 
 ```
 	function readURL(input) {
@@ -74,7 +74,7 @@ What ```<input>``` is allowing the user to input ```type="file"``` and the ```on
 
 What this function is doing is it's taking the image the user selected and displaying it back to the user into the element in our index.html with an ID of 'uploadimg' and setting its visibility to variable.
 
-5. Now that the user has selected their image, what we want to do now is add code to handle when the user clicks the 'upload' button. Right underneath 'readURL' add the following code
+Now that the user has selected their image, what we want to do now is add code to handle when the user clicks the 'upload' button. Right underneath 'readURL' add the following code
 
 ```
 	$('#uploadbtn').click(function () {
@@ -91,7 +91,7 @@ Now that you've got those two set up you should have something like this:
 
 ![5-1](/4. Content/images/Back-end/Vision File Handler.PNG)
 
-6. So we've called 'CallAPI' but we haven't actually defined that function yet. So, add the following code.
+So we've called 'CallAPI' but we haven't actually defined that function yet. So, add the following code.
 
 ```
 	function CallAPI(file, apiUrl, apiKey) {
@@ -119,7 +119,7 @@ Ajax is asynchronous meaning it makes the request in the background. But how do 
 That's what ```.done(function...``` and ```.fail(function...``` are. When the call is done and was successful the ```.done()``` Promise is called and what that's doing is it's taking the result from our call and passing it to a function called 'Pronext step).
 ```.fail()``` is called when the call was unsuccessful and what that Promis is doing is taking the result and adding it to the element in our index.html with an ID of 'response'.
 
-7. So now that we have our result from our API call, we now want to create the 'ProcessResult' function.
+So now that we have our result from our API call, we now want to create the 'ProcessResult' function.
 
 ```
 	function ProcessResult(response) {
@@ -129,4 +129,4 @@ That's what ```.done(function...``` and ```.fail(function...``` are. When the ca
 
 So what this function is doing is it's taking the response passed to it, grabing the first array element inside response.description.captions, getting the text, and adding that to the element in our index.html with an ID of 'response-description'.
 
-8. Final Step. Open index.html in your browser, select an image, click upload and wait for a response to show up.
+Final Step. Open index.html in your browser, select an image, click upload and wait for a response to show up.
