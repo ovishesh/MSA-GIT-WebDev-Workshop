@@ -17,7 +17,7 @@ First, let's create an empty HTML page. It will contain the head and the body.
 </html>
 ```
 ## 2. Setting the title of the page
-Inside the head tags, we will type in the page title. 
+Inside the head tags, we will type in the page title.
 
 If you run index.html in a browser, you will see that it's title is now "Page Title".
 ```
@@ -47,10 +47,10 @@ h1 is the most important heading. We can also use other headings like h2, h3, h4
 ```
 ## 5. Adding a Paragraph
 
-Below the heading, write the following paragraphs: 
+Below the heading, write the following paragraphs:
 ```
     <p>My first paragraph</p>
-    
+
     <p>This is <br> a para<br>graph with line breaks</p>
 ```
 
@@ -92,7 +92,7 @@ Since this is an ordered list, the list elements are automatically formatted wit
 Below the hyperlink add the following:
 ```    
     <h2>Ordered List</h2>
-    
+
     <ol>
         <li>Item 1</li>
         <li>Item 2</li>
@@ -109,7 +109,7 @@ In terms of coding, we use ul instead of ol. The rest of the code remains the sa
 Below the ordered list, add the following:
 ```
     <h2>Unordered List</h2>
-    
+
     <ul>
         <li>Item 1</li>
         <li>Item 2</li>
@@ -122,11 +122,11 @@ Below the unordered list, add the following:
 ```    
 <img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
 ```
-The src attribute tells the browser which image to use. The alt attribute tells the browser what text to display in case the image isn't found. 
+The src attribute tells the browser which image to use. The alt attribute tells the browser what text to display in case the image isn't found.
 
 ## 11. Create an external stylesheet
 
-In the same folder as your index.html file, create a new file called "styles.css". 
+In the same folder as your index.html file, create a new file called "styles.css".
 
 To do this, right click on an empty space, click New > Text Document. Then name it "styles.css".
 
@@ -156,7 +156,7 @@ Refresh your site. The h1 heading at the very top should now have a font color o
 
 ## 14. Create an external JavaScript
 
-In the same folder as your index.html file, create a new file called "test.js". 
+In the same folder as your index.html file, create a new file called "test.js".
 
 To do this, right click on an empty space, click New > Text Document. Then name it "test.js".
 
@@ -164,7 +164,7 @@ To do this, right click on an empty space, click New > Text Document. Then name 
 
 Inside the head tags, write:
 ```
-<script type="text/javascript" src="test.js"></script>
+  <script src="test.js"></script>
 ```
 The src contains the location of the JavaScript file. In this case, it is stored locally, in the same folder as index.html, and is named "test.js".
 
@@ -174,7 +174,17 @@ There will be no noticeable behaviour seen since the JavaScript file is empty.
 
 Inside the JavaScript file, write:
 ```
-alert(“Hello World”)
+function myFunction() {
+	alert("Hello World");
+}
 
 ```
 If you refresh the page, the alert Hello World gets displayed automatically
+
+## 17. Add a button at the bottom of the HTML
+
+Above your closing body tag add the following
+```
+  <button onclick="myFunction()">Try it</button>
+
+```
